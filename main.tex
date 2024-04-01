@@ -1,0 +1,64 @@
+\documentclass[master]{NTHUthesis}
+\usepackage[utf8]{inputenc}
+
+%%% Customization  %%%
+\usepackage{zhlipsum, lipsum}   % dummy text
+\usepackage{graphicx}           % figures
+\usepackage{booktabs}           % tables
+\usepackage[ruled]{algorithm2e} % algorithms, list of algorithms
+\usepackage{cite}               % bibliography
+
+%%% Necessary %%%
+\titleZH{RTDETR的一些變形測試}
+\titleEN{enhance on RTDETR}
+\instituteZH{計算與建模科學研究所}
+\studentID{111026509}
+\studentZH{劉律奇}
+\studentEN{Lu-Chi Liu}
+\advisorZH{陳人豪}
+\advisorEN{Jen-Hao Chen}
+\yearZH{113}
+\monthZH{6}
+
+\begin{document}
+
+\makecover
+\pagenumbering{Roman}
+
+%%% Necessary %%%
+\include{abstractChinese}
+%%% Optional %%%
+\include{acknowZH}
+
+%%% Necessary %%%
+\include{abstractENGLISH}
+
+%%% Optional %%%
+\include{acknowEN}
+
+%%% Necessary %%%
+%建立論文目錄%
+\maketoc
+
+%%% Optional %%%
+
+\phantomsection
+% 建立程式目錄%
+\listofalgorithms
+\addcontentsline{toc}{chapter}{List of Algorithms}
+\clearpage
+
+\pagenumbering{arabic}
+
+\include{Ch1intro}
+\include{Ch2RelatedWorks}
+
+\include{Ch3Methodology}
+
+\include{Ch4Experiments}
+
+\include{Ch5Conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

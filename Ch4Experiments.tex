@@ -1,0 +1,10 @@
+\chapter{Experiments}
+
+\section{Setups}
+\subsection{Dataset}
+ We perform extensive experiments on the Mi- crosoft COCO dataset to validate the proposed detector. For the ablation study, we train on COCO train2017 and val- idate on COCO val2017 dataset. We use the standard COCO AP metric with a single scale image as input. 
+\subsection{Implementation Details}
+We use ResNet and HGNetv2 series pretrained on ImageNet from PaddleClas2 as our backbone. The AIFI consists of 1 transformer layer and the fusion block in CCMF consists of 3 RepBlocks for the base model by default. In IoU-aware query selection, we select the top 300 encoder features to initialize object queries of the decoder. The training strategy and hyperparameters of the decoder al- most follow DINO. We train our detectors using AdamW optimizer with base learning rate = 0.0001, weight decay = 0.0001, global gradient clip norm = 0.0001, and linear warmup steps = 2000. Learning rates of backbone setting follows. We also use exponential moving average (EMA) with ema decay = 0.9999. The configuration means that the total epoch is 12, if not specified, all ablation experiments use. The final results reported use a configuration. The data augmentation in- cludes random {colour distort, expand, crop, flip, resize} operations, follow.
+
+\section{Comparison with RT-DETR}
+ 

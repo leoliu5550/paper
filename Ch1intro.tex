@@ -1,0 +1,28 @@
+\chapter{Introduction}
+In computer vision, object detection stands as a cornerstone topic. It tackles the challenge of identifying and locating objects within an image, even under variable conditions like low light, color shifts, and occlusion. Enables advancements in diverse fields, such as autonomous driving, defect detection, and facial recognition. 
+
+The rise of deep learning in the past decade has revolutionized computer vision. Convolutional Neural Networks (CNNs),  particularly, have seen widespread adoption with architectures like YOLO and their variants, achieving outstanding performance. Recently, the Transformer architecture has shown promise in object detection, with models like DETR and its variants (e.g., Deformable DETR, RT-DETR) achieving good performance.
+
+However, transformers have their challenges. Unlike CNNs which can suffer from latency due to post-processing steps, transformers face limitations such as longer convergence times and difficulty detecting small objects. To avoid these issues, RT-DETR designs a hybrid encoder that can efficiently process multi-scale features and IoU-aware query selection that improves the initialization of object queries. We investigate RT-DETR to improve its recall, especially at lower IoU thresholds, without sacrificing high mAP. This would enhance its effectiveness in real-world applications.
+
+
+% It been shown in many different architecture model.
+
+
+%\lipsum随机生成几段内容的命令%
+% \lipsum[1-3]
+% \begin{table}[t]
+%     \centering
+%     \begin{tabular}{ c | c| c }
+%     \toprule
+%      cell1 & cell2 & cell3 \\
+%     \midrule
+%      cell4 & cell5 & cell6 \\  
+%      cell7 & cell8 & cell9 \\
+%     \bottomrule
+%     \end{tabular}
+%     \caption{An example table}
+%     \label{tab:my_label}
+% \end{table}
+
+% \end{document}
